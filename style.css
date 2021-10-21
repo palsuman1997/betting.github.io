@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========header and navigation====== */
+
+#logo-text #logo {
+    margin-left: 15%;
+    margin-top: 10px;
+}
+#logo-text h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #A67C00;
+    padding-top: 15px;
+    padding-left: 10px ;
+    margin: 0;
+}
+#logo-text p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75em;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 10px;
+}
+#menu ul {
+    display: flex;
+}
+#menu ul li {
+    list-style-type: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 24px;
+    padding-right: 5%;
+}
+#menu ul li a {
+    text-decoration: none;
+    color: #907040;
+}
+#menu ul li:first-child{
+    margin-left: 42%;
+}
+
+@media only screen and (min-width:375px) and (max-width:988px) {
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #menu ul li:first-child{
+        margin-left: 0;
+    }
+    #logo-text {
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width:611px) {
+    #logo-text #logo {
+        /*margin-left: 15%;
+        margin-top: 12%;*/
+    } 
+    #menu ul li:first-child {
+        margin-left: 0%;
+    }
+}
+
+
+
+/* ============hero part css========== */
+
+#hero {
+    background-color: #A67C00;
+    color: white;
+}
+#hero-left h1 {
+    margin-left: 12%;
+    margin-top: 128px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+}
+#hero-left p {
+    margin-top: 14px;
+    margin-left: 12%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+#hero-left #hero-left-img {
+    margin-left: 12%;
+    margin-top: 32px;
+    margin-bottom: 26%;
+}
+#hero-left-img img:first-child {
+    margin-right: 3%;
+}
+#hero-left-img img:nth-child(2) {
+    background-color: white;
+}
+#hero-right img {
+    margin-top: 60px;
+    margin-right: 7.5rem;
+}
+ @media only screen and (max-width:767px) {
+    #hero-right img {
+        margin-top: 5%;
+        margin-left: 25%;
+        margin-right: -10%;
+        margin-bottom: 3%;
+    }
+    #hero-left #hero-left-img {
+        margin-left: 12%;
+        margin-top: 32px;
+        margin-bottom: 3%;
+    }
+}
+@media only screen and (max-width:644px) {
+    #hero-right img {
+        margin-left: 20%;
+    }
+    .header_sec #logo-text, .header_sec #menu {
+        width: 100% !important;
+    }
+    #menu ul li:first-child {
+        margin-left: 0%;
+    }
+    #menu ul li {
+        padding-top: 0px;
+
+    }
+    #menu ul {
+        padding: 0px !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #hero-left h1 {
+        margin-left: 0%;
+        margin-top: 22px;
+        text-align: center;
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width:555px){
+    #hero-right img {
+        margin-left: 25%;
+        width: 50%;
+    }
+}
+
+/* ========quiz part css=========== */
+/* =======quiz top part========= */
+#quiz-top {
+    margin-top: 100px;
+}
+#quiz-top h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    color: #A67C00;
+    margin-bottom: 21px;
+}
+#quiz-top p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 15%;
+    margin-bottom: 41px;
+}
+
+/* ========quiz bottom part===== */
+
+#quiz-bottom #right {
+    background-color: rgba(196, 196, 196, 0.1);
+}
+#quiz-bottom #right h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #907040;
+    text-align: center;
+    margin-top: 63px;
+    margin-bottom: 15px;
+}
+#quiz-bottom #right p {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+color: rgba(0, 0, 0, 0.6);
+padding-left: 250px;
+padding-right: 7px;
+margin-bottom: 30px;
+}
+#quiz-bottom #right button {
+padding: 10px 18px;
+background: #BF9B30;
+border-radius: 4px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: white;
+display: block;
+margin-left: 321px;
+margin-bottom: 55px;
+border: none;
+outline: none;
+}
+@media only screen and (max-width:835px) {
+    #quiz-bottom #right p {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.6);
+        padding-left: 30px;
+        padding-right: 7px; 
+        margin-bottom: 30px;
+        }
+    #quiz-bottom #right button {
+        padding: 10px 18px;
+        background: #BF9B30;
+        border-radius: 4px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: white;
+        display: block;
+        margin: auto;
+        margin-bottom: 55px;
+        border: none;
+        outline: none;
+            }
+}
+/* ==========contest part css========= */
+/* ========contest top part=========== */
+#contest-top {
+    margin-top: 100px;
+}
+#contest-top h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    color: #A67C00;
+    margin-bottom: 21px;
+}
+#contest-top p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 0 13%;
+    margin-bottom: 57px;
+}
+
+/* ========contest bottom part====== */
+
+#contest-bottom h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #907040;
+    margin-left: 133px;
+    margin-bottom: 15px;
+    margin-top: 83px;
+}
+#contest-bottom p {
+    margin-left: 133px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-right: 20%;
+    margin-bottom: 30px;
+}
+#contest-bottom button {
+    margin-left: 204px;
+    background: #BF9B30;
+    border-radius: 4px;
+    font-size: 12px;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    outline: none;
+}
+#contest-bottom img {
+    margin-bottom: 100px;
+}
+@media only screen and (max-width:768px) {
+     #contest-bottom button {
+        display: block;
+        margin: auto;
+        margin-bottom: 3%;
+        
+    } 
+    #contest-bottom h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        color: #907040;
+        margin: auto;
+        margin-bottom: 15px;
+        margin-top: 83px;
+    }
+    #contest-bottom p {
+        margin: auto;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.6);
+        padding-right: 20%;
+        margin-bottom: 30px;
+    }
+}
+/* ===========lucky draw part========== */
+
+#lucky-top h1 {    
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+color: #A67C00;
+margin-bottom: 21px;
+}
+#lucky-top p {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.6);
+padding: 0 15%;
+margin-bottom: 55px;
+}
+#lucky-bottom h3 {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+color: rgba(0, 0, 0, 0.6);
+margin-top: 10px;
+}
+#lucky-bottom button {    
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+background-color: white;
+color: #BF9B30;
+outline: none;
+padding: 10px 18px;
+border: 1px solid #BF9B30;
+border-radius: 4px;
+margin-top: 10px;
+margin-bottom: 100px;
+}
+
+/* ===========feed part========== */
+
+#feed-top h1 {
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+color: #A67C00;
+margin-bottom: 21px;
+}
+#feed-top p {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+color: rgba(0, 0, 0, 0.6);
+margin-bottom: 36px;
+}
+#feed-bottom h3 {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+color: #BF9B30;
+}
+#feed-bottom p {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+color: rgba(0, 0, 0, 0.6);
+}
+#feed-bottom img {
+    width: 254px;
+    height: 172px;
+}
+#feed-bottom button {
+    border: 1px solid #BF9B30;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: white;
+    color: #BF9B30;
+    outline: none;
+    padding: 10px 18px;
+    margin-top: 15px;
+    margin-bottom: 116px;
+}
+@media only screen and (max-width:767px) {
+    #feed-bottom #feed-1 {
+        text-align: center !important;
+    }
+}
+/* =============subscribe part========= */
+
+#subscribe {
+    background-color: rgba(0, 0, 0, 0.2);;
+}
+#subscribe h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 120px;
+    margin-left: 16%;
+}
+#subscribe input {
+    width: 50%;
+    height: 53px;
+    margin-left: 16%;
+    margin-top: 20px;
+    margin-bottom: 135px;
+    border: 1px solid #BF9B30;
+}
+::placeholder {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+color: rgba(0, 0, 0, 0.2);
+padding-left: 10px;
+}
+#subscribe button {
+padding: 16px 24px;
+background: #BF9B30;
+border-radius: 4px;
+outline: none;
+margin-top: 20px;
+margin-left: 12px;
+border: none;
+color: white;
+}
+@media only screen and (max-width:522px) {
+    #subscribe button {
+        display: block;
+        margin: auto ;
+        position: relative;
+        bottom: 20%;
+    }
+}
+@media only screen and (max-width:524px){
+    #subscribe input {
+        width: 100%;
+        margin-left: 0;
+        height: 53px;
+        margin-top: 20px;
+        margin-bottom: 135px;
+        border: 1px solid #BF9B30;
+    }
+}
+/* ==========footer area=========  */
+
+#footer {
+    background-color:  #BF9B30;;
+}
+#footer #footer-heading p:first-child {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+color: #000000;
+margin-top: 50px;
+}
+#footer #footer-heading p:nth-child(2) {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+color: #FFFFFF;
+}
+#footer #icon {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 20px;
+}
+#footer #icon i:nth-child(2) {
+    margin: 0 30px 0 30px;
+}
+#footer #links {
+    margin-top: 40px;
+}
+#footer #links a{
+    text-decoration: none;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+color: #FFFFFF;
+}
+#footer #links a:nth-child(2) {
+    margin: 0 4% 0 4%;
+}
+#footer #links a:nth-child(4) {
+    margin-left: 4%;
+}
+#footer #copyright {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+color: #FFFFFF;
+margin: 21px 0 70px 0;
+}
